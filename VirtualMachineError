@@ -1,0 +1,9 @@
+  @Test
+  public void test01(){
+    //StackOverflowError
+    digui();
+  }
+  
+  public void digui(){
+    digui();
+  }
