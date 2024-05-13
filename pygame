@@ -1,0 +1,8 @@
+    pos = 0
+    play_list.insert(pos, item)
+    pos += 1
+pygame.init()
+pygame.mixer.init()
+
+
+def play():
