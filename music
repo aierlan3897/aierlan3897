@@ -1,0 +1,6 @@
+    pygame.mixer.music.load(play_list.get(tkr.ACTIVE))
+    var.set(play_list.get(tkr.ACTIVE))
+    pygame.mixer.music.play()
+
+
+def stop():
