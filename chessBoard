@@ -1,0 +1,11 @@
+		chessBoard[row][col] = 'x';
+		break;
+	}
+}
+void computerMove(char chessBoard[MAX_ROW][MAX_COL]) {
+	while (1) {
+		int row = rand() % MAX_ROW;
+		int col = rand() % MAX_COL;
+		if (chessBoard[row][col] != ' ') {
+			continue;
+		}
