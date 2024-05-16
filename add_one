@@ -1,0 +1,21 @@
+int add_one(int n)
+{
+return n + 1;
+}
+
+void TestWrap()
+{
+
+CommCommand<int> cmd;
+// free function
+cmd.Wrap(add_one, 0);
+
+// lambda function
+cmd.Wrap([](int n){return n + 1; }, 1);
+
+// functor
+cmd.Wrap(bloop);
+cmd.Wrap(bloop, 4);
+
+STA t = { 10 };
+int x = 3;
