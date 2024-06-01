@@ -1,0 +1,11 @@
+    newtarget = (nodeptr_t)malloc(sizeof(node_t));
+    newtarget->next = listnode->next;
+    newtarget->x = x;
+    newtarget->y = 0;
+    listnode->next = newtarget;
+    return listnode;
+}
+ 
+void print_target(nodeptr_t listnode)
+{
+    node
